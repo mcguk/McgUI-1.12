@@ -1,0 +1,3 @@
+
+BigWigsRespawnTimersDB = nil
+BigWigTimerClickthrough = nil

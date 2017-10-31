@@ -1,0 +1,41 @@
+
+TheoryCraft_SetBonuses = {
+	["Field Marshal's Vestments"] = {
+		[1] = {
+			["pieces"] = 2,
+			["text"] = "+20 Stamina.",
+		},
+		[2] = {
+			["pieces"] = 3,
+			["text"] = "Reduces the cooldown of your Gouge ability by 1 sec.",
+		},
+		[3] = {
+			["pieces"] = 6,
+			["text"] = "+40 Attack Power.",
+		},
+	},
+	["Deathdealer's Embrace"] = {
+		[1] = {
+			["pieces"] = 5,
+			["text"] = "15% increased damage to your Eviscerate ability.",
+		},
+	},
+	["Bloodfang Armor"] = {
+		[1] = {
+			["pieces"] = 3,
+			["text"] = "Increases the chance to apply poisons to your target by 5%.",
+		},
+		[2] = {
+			["pieces"] = 5,
+			["text"] = "Improves the threat reduction of Feint by 25%.",
+		},
+		[3] = {
+			["pieces"] = 8,
+			["text"] = "Gives the Rogue a chance to inflict 283 to 317 damage on the target and heal the Rogue for 50 health every 1 sec. for 6 sec. on a melee hit.\n",
+		},
+	},
+}
+TheoryCraft_MitigationMobs = {
+}
+TheoryCraft_MitigationPlayers = {
+}

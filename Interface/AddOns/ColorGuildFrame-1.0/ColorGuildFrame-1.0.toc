@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: Color Guild & Who List
+## Notes: It does magical stuff.
+## Author: Avi
+## Dependencies:
+## SavedVariables:
+## OptionalDeps: X-Perl
+
+ColorGuildFrame-1.0.lua

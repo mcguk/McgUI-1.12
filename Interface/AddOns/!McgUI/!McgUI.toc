@@ -1,0 +1,12 @@
+## Interface: 11100
+## Title: !|cffffff00MCG|cff71C671UI
+## Version: 0a
+## Notes: MCGUI UI utils (handles only sw stats atm)
+## Author: Mcg
+## Dependencies: SW_Stats
+
+
+API.lua
+McgUI.xml
+McgUI.lua
+

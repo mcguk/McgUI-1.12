@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: Bag Cleaner v0.4
+## Notes: /bc /bagcleaner
+## SavedVariables: BC_var, BC_junk
+Bag Cleaner.xml
+Bag Cleaner.lua

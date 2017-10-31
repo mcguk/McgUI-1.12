@@ -1,0 +1,202 @@
+
+BigWigsDB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
+	["disabledModules"] = {
+		["Default"] = {
+			["Razuvious Assistant"] = true,
+			["Custom Bars"] = true,
+			["High Priestess Jeklik"] = true,
+			["Gothik the Harvester"] = true,
+			["Buru the Gorger"] = true,
+			["Wushoolay"] = true,
+			["Thaddius Arrows"] = true,
+			["Anubisath Defender"] = true,
+			["Healbot Assist"] = true,
+			["Kurinnaxx"] = true,
+			["Firemaw"] = true,
+			["Grand Widow Faerlina"] = true,
+			["High Priestess Mar'li"] = true,
+			["Raid Icons"] = true,
+			["Contribute"] = true,
+			["Majordomo Executus"] = true,
+			["High Priest Venoxis"] = true,
+			["The Twin Emperors"] = true,
+			["Taerar"] = true,
+			["Vaelastrasz the Corrupt"] = true,
+			["Target Monitor"] = true,
+			["RaidWarning"] = true,
+			["High Priest Thekal"] = true,
+			["Noth the Plaguebringer"] = true,
+			["Bloodlord Mandokir"] = true,
+			["Renataki"] = true,
+			["Common Auras"] = true,
+			["The Prophet Skeram"] = true,
+			["Gluth"] = true,
+			["C'Thun"] = true,
+			["WarningSign"] = true,
+			["General Rajaxx"] = true,
+			["Broodlord Lashlayer"] = true,
+			["Princess Huhuran"] = true,
+			["Options Menu"] = true,
+			["Moam"] = true,
+			["Sounds"] = true,
+			["High Priestess Arlokk"] = true,
+			["Range"] = true,
+			["RaidOfficer"] = true,
+			["Counter Bars"] = true,
+			["Proximity"] = true,
+			["Thaddius"] = true,
+			["Ouro"] = true,
+			["Tranq"] = true,
+			["Ayamiss the Hunter"] = true,
+			["Emeriss"] = true,
+			["Ignite"] = true,
+			["CThun Assist"] = true,
+			["DousedRunes"] = true,
+			["Hakkar"] = true,
+			["Ebonroc"] = true,
+			["The Bug Family"] = true,
+			["Nefarian Counter"] = true,
+			["Loatheb Tactical"] = true,
+			["Colors"] = true,
+			["Onyxia"] = true,
+			["Zombie Food"] = true,
+			["BossRecords"] = true,
+			["Bars"] = true,
+			["Jin'do the Hexxer"] = true,
+			["Version Query"] = true,
+			["Baron Geddon"] = true,
+			["Heigan the Unclean"] = true,
+			["Sulfuron Harbinger"] = true,
+			["Gri'lek"] = true,
+			["AutoReply"] = true,
+			["Respawn Timers"] = true,
+			["Lethon"] = true,
+			["Sapphiron"] = true,
+			["Azuregos"] = true,
+			["Anubisath Guardian"] = true,
+			["Gehennas"] = true,
+			["Messages"] = true,
+			["Gahz'ranka"] = true,
+			["Shazzrah"] = true,
+			["Comm"] = true,
+			["Battleguard Sartura"] = true,
+			["Golemagg the Incinerator"] = true,
+			["Kel'Thuzad"] = true,
+			["Nefarian"] = true,
+			["Fankriss the Unyielding"] = true,
+			["Lucifron"] = true,
+			["Anub'Rekhan"] = true,
+			["Hazza'rah"] = true,
+			["Ossirian the Unscarred"] = true,
+			["Loatheb"] = true,
+			["Ragnaros"] = true,
+			["BossBlock"] = true,
+			["Maexxna"] = true,
+			["The Four Horsemen"] = true,
+			["Flamegor"] = true,
+			["Grobbulus"] = true,
+			["Instructor Razuvious"] = true,
+			["Razorgore the Untamed"] = true,
+			["Magmadar"] = true,
+			["Ysondre"] = true,
+			["Lord Kazzak"] = true,
+			["Patchwerk"] = true,
+			["Test"] = true,
+			["Viscidus"] = true,
+			["Chromaggus"] = true,
+			["Garr"] = true,
+		},
+	},
+	["namespaces"] = {
+		["Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 981.3333659043645,
+					["posy"] = 103.8196623234725,
+				},
+			},
+		},
+		["KLHTM Target"] = {
+			["profiles"] = {
+				["Default"] = {
+					["enabled"] = true,
+				},
+			},
+		},
+		["Tranq"] = {
+			["profiles"] = {
+				["Default"] = {
+					["bars"] = false,
+				},
+			},
+		},
+		["DousedRunes"] = {
+			["profiles"] = {
+				["Default"] = {
+					["isVisible"] = false,
+					["time"] = 1492728989,
+				},
+			},
+		},
+		["Colors"] = {
+			["profiles"] = {
+				["Default"] = {
+					["bgc"] = "000000",
+					["shortbar"] = {
+						[1] = "303030",
+					},
+					["bga"] = 0.5,
+					["longnr"] = 1,
+					["shortnr"] = 1,
+					["longbar"] = {
+						[1] = "303030",
+					},
+					["txtc"] = "ffffff",
+				},
+			},
+		},
+		["Ignite"] = {
+			["profiles"] = {
+				["Default"] = {
+					["isVisible"] = false,
+				},
+			},
+		},
+		["Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 1173.510032218528,
+					["scale"] = 1.1,
+					["emphasizePosY"] = 380.26617620297,
+					["posy"] = 632.7103156231424,
+					["reverse"] = false,
+					["emphasizePosX"] = 938.1328655750929,
+				},
+			},
+		},
+		["WarningSign"] = {
+			["profiles"] = {
+				["Default"] = {
+					["isVisible"] = false,
+				},
+			},
+		},
+	},
+}
+BigWigsFubarDB = {
+	["profiles"] = {
+		["Default"] = {
+			["showIcon"] = false,
+			["detachedTooltip"] = {
+			},
+			["showText"] = true,
+		},
+	},
+}
+BigWigsCommonAurasDB = nil
+BigWigsZombieFoodDB = nil
+BigWigsRespawnTimersDB = nil
+BigWigsContributeFlag = nil

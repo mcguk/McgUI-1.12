@@ -1,0 +1,45 @@
+
+EnergyWatch_Save = {
+	["Mcg of Public Test Realm"] = {
+		["show"] = 1,
+		["status"] = 1,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+	["Mcgherbs of Kronos"] = {
+		["show"] = 0,
+		["status"] = 0,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+	["Mcconsumable of Kronos"] = {
+		["show"] = 0,
+		["status"] = 0,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+	["Mcgbank of Kronos"] = {
+		["show"] = 0,
+		["status"] = 0,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+	["Mcg of Kronos"] = {
+		["show"] = 1,
+		["status"] = 1,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+	["Mcgstuff of Kronos"] = {
+		["show"] = 0,
+		["status"] = 0,
+		["text"] = "",
+		["sound"] = "",
+		["scale"] = 1,
+	},
+}

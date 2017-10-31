@@ -1,0 +1,5 @@
+## Interface: 11100
+## Title: AfterCast (v0.6)
+## Notes: Perform event after spell cast (v0.6)
+## Author: Iriel (iriel@vigilance-committee.org)
+AfterCast.xml

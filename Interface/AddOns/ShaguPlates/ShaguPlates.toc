@@ -1,0 +1,18 @@
+## Interface: 11200
+## Title: |cff33ffccShagu|cffffffffPlates
+## Author: Shagu, 2016
+## Notes: Nameplate addon featuring castbars and class colors
+## Version: 2.0
+## SavedVariables: pfNameplates_config
+
+env\locale.lua
+env\locales_deDE.lua
+env\locales_enUS.lua
+env\locales_frFR.lua
+env\locales_ruRU.lua
+env\locales_zhCN.lua
+env\locales_koKR.lua
+
+castbar.lua
+config.lua
+nameplates.lua

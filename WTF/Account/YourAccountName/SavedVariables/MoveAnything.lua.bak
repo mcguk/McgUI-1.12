@@ -1,0 +1,40 @@
+
+MoveAnything_CustomFrames = {
+}
+MoveAnything_CharacterSettings = {
+	["default"] = {
+		["StaticPopup1"] = {
+			["originalLeft"] = 906.6666323818639,
+			["scale"] = 1,
+			["originalBottom"] = 1000.000031184581,
+			["hidden"] = false,
+			["y"] = 1000.000031184581,
+			["x"] = 906.6666323818639,
+			["name"] = "StaticPopup1",
+			["movable"] = true,
+			["originalScale"] = 1,
+		},
+		["UIErrorsFrame"] = {
+			["originalLeft"] = 810.6667571201888,
+			["scale"] = 1,
+			["originalBottom"] = 1018.000025303279,
+			["hidden"] = false,
+			["y"] = 1018.000025303279,
+			["x"] = 810.6667571201888,
+			["name"] = "UIErrorsFrame",
+			["movable"] = true,
+			["originalScale"] = 1,
+		},
+		["TooltipMover"] = {
+			["originalLeft"] = 991.6666357328387,
+			["originalBottom"] = 1120.000015318742,
+			["hidden"] = false,
+			["y"] = 187.7787456699764,
+			["x"] = 1978.3325339093,
+			["movable"] = true,
+			["name"] = "TooltipMover",
+			["originalScale"] = 1,
+		},
+	},
+}
+MoveAnything_UseCharacterSettings = false

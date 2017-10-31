@@ -1,0 +1,241 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	
+	<Script file="Avatar.lua"/>
+	<Script file="BoundingBox.lua"/>
+	<Script file="CursorControls.lua"/>
+	<Script file="ProfileManager.lua"/>
+	<Script file="ZuxanaModelCitizen.lua"/>
+	
+	<Frame name="ModelCitizen_BoundingBoxTemplate" frameStrata="LOW" virtual="true" hidden="true">
+		<Size>
+			<AbsDimension x="200" y="200"/>
+		</Size>
+		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background"/>
+		<Frames>
+			<PlayerModel name="$parent_Avatar" setAllPoints="true">
+				<Size>
+					<AbsDimension x="200" y="200"/>
+				</Size>
+				<Scripts>
+					<OnLoad>
+						ModelCitizen_Avatar_OnLoad();
+					</OnLoad>
+					<OnUpdate>
+						ModelCitizen_Avatar_OnUpdate();
+					</OnUpdate>
+					<OnEvent>
+						ModelCitizen_Avatar_OnEvent();
+					</OnEvent>
+				</Scripts>
+			</PlayerModel>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				ModelCitizen_BoundingBox_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				ModelCitizen_BoundingBox_OnEvent();
+			</OnEvent>
+			<OnMouseDown>
+				ModelCitizen_BoundingBox_OnMouseDown();
+			</OnMouseDown>
+			<OnUpdate>
+				ModelCitizen_BoundingBox_OnUpdate();
+			</OnUpdate>
+			<OnReceiveDrag>
+				ModelCitizen_BoundingBox_OnReceiveDrag();
+			</OnReceiveDrag>
+			<OnMouseUp>
+				ModelCitizen_BoundingBox_OnMouseUp();
+			</OnMouseUp>
+			<OnShow>
+				ModelCitizen_BoundingBox_OnShow();
+			</OnShow>
+			<OnHide>
+				ModelCitizen_BoundingBox_OnHide();
+			</OnHide>
+		</Scripts>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera0"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="0">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera1"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="1">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera2"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="2">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera3"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="3">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera4"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="4">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera5"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="5">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera6"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="6">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera7"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="7">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera8"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="8">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera9"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="9">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera10"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="10">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera11"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="11">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera12"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="12">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera13"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="13">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+	
+	<Frame name="ModelCitizen_Camera14"
+	       inherits="ModelCitizen_BoundingBoxTemplate"
+	       parent="UIParent" frameStrata="LOW" setAllPoints="true" id="14">
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT">
+				<Size>
+					<AbsDimension x="0" y="0"/>
+				</Size>
+			</Anchor>
+		</Anchors>
+	</Frame>
+</Ui>

@@ -1,0 +1,5 @@
+
+#Version=1.9.13
+#Description=*Fixed bug with Prophet Skeram recording for Kronos
+#UpdateSubmitter=Dilatazu
+#UpdateImportance=|DefaultImportance=Good|

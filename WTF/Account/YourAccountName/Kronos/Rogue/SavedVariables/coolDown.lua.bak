@@ -1,0 +1,25 @@
+
+coolDownOptions = {
+	["backdropColor"] = {
+		["a"] = 1,
+		["r"] = 0,
+		["g"] = 0,
+		["b"] = 0,
+	},
+	["minSpellDuration"] = 2,
+	["barColor"] = {
+		["a"] = 1,
+		["r"] = .251,
+		["g"] = .251,
+		["b"] = .251,
+	},
+	["frameScale"] = 0.75,
+	["maxSpellDuration"] = 7200,
+	["minItemDuration"] = 3,
+	["textColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 1,
+		["b"] = 1,
+	},
+}

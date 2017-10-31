@@ -1,0 +1,2 @@
+UIErrorsFrame:Hide()
+                                

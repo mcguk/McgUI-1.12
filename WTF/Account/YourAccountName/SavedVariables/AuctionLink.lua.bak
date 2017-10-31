@@ -1,0 +1,2 @@
+
+AuctionLinkDB = nil

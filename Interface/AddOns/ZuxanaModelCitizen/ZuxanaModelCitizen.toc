@@ -1,0 +1,9 @@
+## Interface: 10900
+## Title: Zuxana's ModelCitizen
+## Version: 0.9.3
+## Notes: Adjustable 3D model portraits.
+## OptionalDeps: 
+## Dependencies: 
+## SavedVariables: ModelCitizen_Profiles, ModelCitizen_Cameras
+## SavedVariablesPerCharacter: ModelCitizen_SessionProfile
+ZuxanaModelCitizen.xml

@@ -1,0 +1,71 @@
+The 1.10 patch appears to have changed the way in which spell events occur,
+so here's a summary of what seems to happen now.
+
+Gathering:
+
+SPELLCAST_START
+SPELLCAST_STOP
+
+Gathering interruption:
+SPELLCAST_START
+<interupt>
+SPELLCAST_STOP
+SPELLCAST_INTERRUPTED (some fraction of a second thereafter)
+
+Instant Cast Spell:
+SPELLCAST_STOP
+
+Normal Spell:
+SPELLCAST_START
+SPELLCAST_STOP
+
+Normal Spell Interruption:
+SPELLCAST_START
+<interupt>
+SPELLCAST_STOP
+SPELLCAST_INTERRUPTED (some fraction of a second thereafter)
+
+Channelled Spell:
+SPELLCAST_CHANNEL_START
+SPELLCAST_STOP (some number)
+SPELLCAST_CHANNEL_STOP
+SPELLCAST_STOP
+
+Channelled Spell Interruption:
+SPELLCAST_CHANNEL_START
+SPELLCAST_STOP (possibly more than one)
+SPELLCAST_CHANNEL_STOP
+
+** MISSING -- Target death during cast **
+
+State Transitions for detection
+-------------------------------
+
+Init:
+   SPELLCAST_STOP --> [Instant Cast] -> CONSUME -> Init
+   SPELLCAST_FAILED --> [Failed] -> CONSUME -> Init
+   SPELLCAST_START --> [Normal Cast Start] --> CONSUME -> NormalCast
+   SPELLCAST_CHANNEL_START -> [Channeled Cast Start] --> CONSUME -> ChannelCast
+   * -> CONSUME -> Init
+
+NormalCast:
+   SPELLCAST_STOP --> CONSUME -> StopOrInterrupt
+   SPELLCAST_DELAYED --> [Delayed] --> CONSUME --> NormalCast
+   SPELLCAST_FAILED --> [Failed] -> CONSUME --> Init
+
+StopOrInterrupt
+   SPELLCAST_INTERRUPT --> [Interrupted] --> CONSUME --> Init
+   (1 second elapsed) --> [Done] --> Init
+   * --> [Done] --> Init {NO CONSUME}
+
+ChannelCast:
+   SPELLCAST_DELAYED --> [Delayed] --> CONSUME --> ChannelCast
+   SPELLCAST_STOP --> CONSUME -> ChannelCast
+   SPELLCAST_CHANNEL_STOP --> CONSUME -> ChannelStopOrInterrupt
+   SPELLCAST_FAILED --> [Failed] -> CONSUME --> Init
+
+ChannelStopOrInterrupt:
+   SPELLCAST_STOP --> [Done] --> CONSUME --> Init
+   (1 second elapsed) --> [Interrupted,Sorta] --> Init
+   * --> [Interrupted, sorta] --> Init {NO CONSUME}
+

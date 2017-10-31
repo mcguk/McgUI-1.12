@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: CloseUp
+## Notes: Adds model viewing flexibility
+## Author: TotalPackage
+## Version: 2.4.002
+## X-Category: Interface Enhancements
+## SavedVariables: CU_HideBG
+
+core.lua

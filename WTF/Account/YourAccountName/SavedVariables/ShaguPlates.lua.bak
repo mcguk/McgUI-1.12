@@ -1,0 +1,15 @@
+
+pfNameplates_config = {
+	["blueshaman"] = "1",
+	["clickthreshold"] = ".5",
+	["showhp"] = "1",
+	["spellname"] = "1",
+	["showcastbar"] = "1",
+	["vpos"] = "0",
+	["showdebuffs"] = "0",
+	["friendclassc"] = "1",
+	["raidiconsize"] = "16",
+	["clickthrough"] = "0",
+	["enemyclassc"] = "1",
+	["rightclick"] = "1",
+}

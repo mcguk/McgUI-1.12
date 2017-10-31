@@ -1,0 +1,2 @@
+
+oSkinDB = nil

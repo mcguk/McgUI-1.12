@@ -1,0 +1,23 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+  <Script file="AfterCast.lua"/>
+  
+  <Frame name="AfterCastFrame" hidden="true">
+    <Scripts>
+      <OnLoad>
+	AfterCast_OnLoad();
+      </OnLoad>
+      <OnEvent>
+	AfterCast_OnEvent(event);
+      </OnEvent>
+      <OnUpdate>
+	AfterCast_OnUpdate(arg1);
+      </OnUpdate>
+    </Scripts>
+  </Frame>
+  <EditBox name="AfterCastEditBox" ignoreArrows="true"
+	   frameStrata="DIALOG" toplevel="true" 
+	   historyLines="32" letters="1024" hidden="true"/>
+</Ui>
