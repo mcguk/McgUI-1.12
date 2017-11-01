@@ -292,11 +292,11 @@ function ebar_start(arg1)
   local a
   local b
   local hitter = nil
-  a, b, hitter = string.find(arg1, "(.+) hits you")
-  if not hitter then a, b, hitter = string.find(arg1, "(.+) crits you") end
-  if not hitter then a, b, hitter = string.find(arg1, "(.+) misses you") end
-  if not hitter then a, b, hitter = string.find(arg1, "(.+) attacks. You ") end
-  if hitter == UnitName("target") then ebar_set(hitter) end
+  --a, b, hitter = string.find(arg1, "(.+) hits you")
+  --if not hitter then a, b, hitter = string.find(arg1, "(.+) crits you") end
+  --if not hitter then a, b, hitter = string.find(arg1, "(.+) misses you") end
+  --if not hitter then a, b, hitter = string.find(arg1, "(.+) attacks. You ") end
+  --if hitter == UnitName("target") then ebar_set(hitter) end
 end
 function ebar_set(targ)
   eons, eoffs = UnitAttackSpeed("target")
