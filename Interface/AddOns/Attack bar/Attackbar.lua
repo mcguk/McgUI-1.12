@@ -133,7 +133,8 @@ function Abar_selfhit(arg1)
       ont = GetTime()
       tons = ons
       ons = ons - math_mod(ons, 0.01)
-      Abar_Mhrs(tons,"Main["..ons.."s]("..hd.."-"..ld..")",.251,.251,.251)
+      --Abar_Mhrs(tons,"Main["..ons.."s]("..hd.."-"..ld..")",.251,.251,.251)
+	  Abar_Mhrs(tons,""..ons.."",.251,.251,.251)
     end
   end
 end
@@ -171,7 +172,8 @@ function Abar_spellhit(arg1)
   elseif spell == "Shoot" and AttackBarDB.range == true then
     trs = rs
     rs = rs - math_mod(rs, 0.01)
-    Abar_Mhrs(trs, "Wand[" .. ons .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
+    --Abar_Mhrs(trs, "Wand[" .. ons .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
+	Abar_Mhrs(tons,""..ons.."",.251,.251,.251)
   elseif (spell == "Raptor Strike" or spell == "Heroic Strike" or
     spell == "Maul" or spell == "Cleave" or spell == "Slam") and AttackBarDB.h2h == true then
     local hd, ld, ohd, lhd = UnitDamage("player")
@@ -180,7 +182,8 @@ function Abar_spellhit(arg1)
     pont = ont
     local tons = ons
     ons = ons - math_mod(ons, 0.01)
-    Abar_Mhrs(tons, "Main[" .. ons .. "s](" .. hd .. "-" .. ld .. ")", .251,.251,.251)
+    --Abar_Mhrs(tons, "Main[" .. ons .. "s](" .. hd .. "-" .. ld .. ")", .251,.251,.251)
+	Abar_Mhrs(tons,""..ons.."",.251,.251,.251)
   end
 end
 function abar_spelldir(spellname)
