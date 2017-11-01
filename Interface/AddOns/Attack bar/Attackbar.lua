@@ -127,7 +127,7 @@ function Abar_selfhit(arg1)
         ohd, old = ohd - math_mod(ohd, 1), old - math_mod(old, 1)
         offs = offs - math_mod(offs, 0.01)
         --Abar_Ohs(offs, "Off[" .. offs .. "s](" .. ohd .. "-" .. old .. ")", 0, 0, 1)
-		Abar_Ohs(offs,""..offs.."",.251,.251,.2511)
+		Abar_Ohs(offs,""..offs.."",.251,.251,.251)
       end
     else
       ont = GetTime()
@@ -167,11 +167,11 @@ function Abar_spellhit(arg1)
   if spell == "Auto Shot" and AttackBarDB.range == true then
     trs = rs
     rs = rs - math_mod(rs, 0.01)
-    Abar_Mhrs(trs, "Auto Shot[" .. rs .. "s](" .. rhd .. "-" .. rld .. ")", 0, 1, 0)
+    Abar_Mhrs(trs, "Auto Shot[" .. rs .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
   elseif spell == "Shoot" and AttackBarDB.range == true then
     trs = rs
     rs = rs - math_mod(rs, 0.01)
-    Abar_Mhrs(trs, "Wand[" .. ons .. "s](" .. rhd .. "-" .. rld .. ")", .7, .1, 1)
+    Abar_Mhrs(trs, "Wand[" .. ons .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
   elseif (spell == "Raptor Strike" or spell == "Heroic Strike" or
     spell == "Maul" or spell == "Cleave" or spell == "Slam") and AttackBarDB.h2h == true then
     local hd, ld, ohd, lhd = UnitDamage("player")
@@ -180,7 +180,7 @@ function Abar_spellhit(arg1)
     pont = ont
     local tons = ons
     ons = ons - math_mod(ons, 0.01)
-    Abar_Mhrs(tons, "Main[" .. ons .. "s](" .. hd .. "-" .. ld .. ")", 0, 0, 1)
+    Abar_Mhrs(tons, "Main[" .. ons .. "s](" .. hd .. "-" .. ld .. ")", .251,.251,.251)
   end
 end
 function abar_spelldir(spellname)
@@ -193,28 +193,28 @@ function abar_spelldir(spellname)
     if spellname == "Throw" then
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "Thrown[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", 1, .5, 0)
+      Abar_Mhrs(trs - 1, "Thrown[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")",.251,.251,.251)
     elseif spellname == "Shoot" then
       rs = UnitRangedDamage("player")
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "Range[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", .5, 0, 1)
+      Abar_Mhrs(trs - 1, "Range[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
     elseif spellname == "Shoot Bow" then
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "Bow[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", 1, .5, 0)
+      Abar_Mhrs(trs - 1, "Bow[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
     elseif spellname == "Shoot Gun" then
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "Gun[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", 1, .5, 0)
+      Abar_Mhrs(trs - 1, "Gun[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
     elseif spellname == "Shoot Crossbow" then
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "X-Bow[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", 1, .5, 0)
+      Abar_Mhrs(trs - 1, "X-Bow[" ..(rs) .. "s](" .. rhd .. "-" .. rld .. ")", .251,.251,.251)
     elseif spellname == "Aimed Shot" then
       trs = rs
       rs = rs - math_mod(rs, 0.01)
-      Abar_Mhrs(trs - 1, "Aiming[" ..(3) .. "s]", 1, .1, .1)
+      Abar_Mhrs(trs - 1, "Aiming[" ..(3) .. "s]", .251,.251,.251)
     end
   end
 end
@@ -298,7 +298,7 @@ end
 function ebar_set(targ)
   eons, eoffs = UnitAttackSpeed("target")
   eons = eons - math_mod(eons, 0.01)
-  ebar_mhs(eons, "Target" .. "[" .. eons .. "s]", 1, .1, .1)
+  ebar_mhs(eons, "Target" .. "[" .. eons .. "s]", .251,.251,.251)
 end
 -- end
 function ebar_mhs(bartime, text, r, g, b)
