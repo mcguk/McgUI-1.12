@@ -7,7 +7,7 @@ _LazyPig: enabled
 Aero: enabled
 Atlas: enabled
 AtlasLoot: enabled
-AtlasQuest: disabled
+AtlasQuest: enabled
 AuctionLink: enabled
 AutoProfit: enabled
 Bartender2: enabled
@@ -39,7 +39,7 @@ XLoot: enabled
 ZuxanaModelCitizen: enabled
 VCB: enabled
 ModifiedPowerAuras: enabled
-Attack bar: disabled
+Attack bar: enabled
 Bag Cleaner: enabled
 RingMenu: enabled
 TinyTip: enabled

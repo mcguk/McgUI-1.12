@@ -7,7 +7,7 @@ _LazyPig: enabled
 Aero: enabled
 Atlas: enabled
 AtlasLoot: enabled
-AtlasQuest: disabled
+AtlasQuest: enabled
 AuctionLink: enabled
 AutoProfit: enabled
 Bartender2: enabled
@@ -40,7 +40,7 @@ ZuxanaModelCitizen: enabled
 VCB: enabled
 ModifiedPowerAuras: enabled
 Attack bar: disabled
-Bag Cleaner: disabled
+Bag Cleaner: enabled
 RingMenu: enabled
 TinyTip: enabled
 TinyTipExtras: enabled
@@ -55,7 +55,7 @@ KTMAutoHider: enabled
 KLHThreatMeter: enabled
 Align: enabled
 BigWigs: enabled
-Clean_Up_GUI: disabled
+Clean_Up_GUI: enabled
 coolDown: enabled
 DiscordFrameModifierOptions: enabled
 DPSMate_AbsorbsTaken: disabled
