@@ -241,7 +241,7 @@ function Abar_Update()
 end
 function Abar_Mhrs(bartime, text, r, g, b)
   Abar_Mhr:Hide()
-  Abar_Mhr.txt = text
+  Abar_Mhr.txt = ""
   Abar_Mhr.st = GetTime()
   Abar_Mhr.et = GetTime() + bartime
   Abar_Mhr:SetStatusBarColor(r, g, b)
@@ -252,7 +252,7 @@ function Abar_Mhrs(bartime, text, r, g, b)
 end
 function Abar_Ohs(bartime, text, r, g, b)
   Abar_Oh:Hide()
-  Abar_Oh.txt = text
+  Abar_Oh.txt = ""
   Abar_Oh.st = GetTime()
   Abar_Oh.et = GetTime() + bartime
   Abar_Oh:SetStatusBarColor(r, g, b)
@@ -303,7 +303,7 @@ end
 -- end
 function ebar_mhs(bartime, text, r, g, b)
   ebar_mh:Hide()
-  ebar_mh.txt = text
+  ebar_mh.txt = ""
   ebar_mh.st = GetTime()
   ebar_mh.et = GetTime() + bartime
   ebar_mh:SetStatusBarColor(r, g, b)
@@ -314,7 +314,7 @@ function ebar_mhs(bartime, text, r, g, b)
 end
 function ebar_ohs(bartime, text, r, g, b)
   ebar_oh:Hide()
-  ebar_oh.txt = text
+  ebar_oh.txt = ""
   ebar_oh.st = GetTime()
   ebar_oh.et = GetTime() + bartime
   ebar_oh:SetStatusBarColor(r, g, b)
