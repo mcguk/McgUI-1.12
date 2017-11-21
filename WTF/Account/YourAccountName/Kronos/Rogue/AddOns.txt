@@ -40,7 +40,7 @@ ZuxanaModelCitizen: enabled
 VCB: enabled
 ModifiedPowerAuras: enabled
 Attack bar: disabled
-Bag Cleaner: enabled
+Bag Cleaner: disabled
 RingMenu: enabled
 TinyTip: enabled
 TinyTipExtras: enabled
@@ -55,7 +55,7 @@ KTMAutoHider: enabled
 KLHThreatMeter: enabled
 Align: enabled
 BigWigs: enabled
-Clean_Up_GUI: enabled
+Clean_Up_GUI: disabled
 coolDown: enabled
 DiscordFrameModifierOptions: enabled
 DPSMate_AbsorbsTaken: disabled
