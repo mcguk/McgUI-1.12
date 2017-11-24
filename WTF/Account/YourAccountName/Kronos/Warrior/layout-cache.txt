@@ -176,7 +176,6 @@ X: 1734
 Y: -1048
 W: 206
 H: 119
-
 Frame: Tablet20DetachedFrame1
 FrameLevel: 1
 X: 1583
