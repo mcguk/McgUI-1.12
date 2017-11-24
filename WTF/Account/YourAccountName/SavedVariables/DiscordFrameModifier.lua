@@ -23080,7 +23080,6 @@ DFM_Settings = {
 			},
 		},
 	},
-	["Mcg :: LagStrider-EU"] = "Default",
 	["Mcg :: Kronos"] = "Default",
 }
 DFM_Initialized = {
