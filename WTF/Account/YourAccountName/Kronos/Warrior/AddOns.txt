@@ -1,5 +1,4 @@
 !toggle: enabled
-AdvancedTradeSkillWindow: enabled
 ntmysFixLoadingTimes: enabled
 SpecialTalent: enabled
 SpecialTalentUI: enabled
