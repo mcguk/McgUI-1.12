@@ -20,7 +20,7 @@ KLHTM_SavedVariables = {
 					["threat"] = true,
 					["name"] = true,
 					["pc"] = true,
-					["rage"] = false,
+					["rage"] = true,
 					["hits"] = true,
 				},
 				["sortColumn"] = "threat",
