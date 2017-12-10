@@ -81,7 +81,7 @@ DPSMate_Fails: disabled
 DPSMate_FriendlyFireTaken: disabled
 DPSMate_FriendlyFire: disabled
 DPSMate_HealingAndAbsorbs: disabled
-DPSMate_Interrupts: enabled
+DPSMate_Interrupts: disabled
 DPSMate_LiftMagicReceived: disabled
 DPSMate_LiftMagic: disabled
 DPSMate_!deDE: disabled
