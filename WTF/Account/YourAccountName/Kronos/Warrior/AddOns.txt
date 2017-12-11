@@ -1,7 +1,4 @@
 !toggle: enabled
-ntmysFixLoadingTimes: enabled
-SpecialTalent: enabled
-SpecialTalentUI: enabled
 _LazyPig: enabled
 Aero: enabled
 Atlas: enabled
@@ -39,7 +36,6 @@ ZuxanaModelCitizen: enabled
 VCB: enabled
 ModifiedPowerAuras: enabled
 Attack bar: enabled
-Bag Cleaner: disabled
 RingMenu: enabled
 TinyTip: enabled
 TinyTipExtras: enabled
@@ -98,18 +94,11 @@ eCastingBar: enabled
 EnergyWatch_v2: disabled
 IFrameManager: enabled
 ItemRack: enabled
-VF_RaidDamage: disabled
 DPSMate_Threat: disabled
 DPSMate_!koKR: disabled
-SW_Stats: disabled
-!McgUI: disabled
-SW_FixLogStrings: disabled
 NotGrid: enabled
 AfterCast: enabled
-BigWigs_HorsemenStrategy: enabled
 ColorGuildFrame-1.0: enabled
-IMBA: enabled
 SuperMacro: enabled
 ShaguTooltips: enabled
 MoveAnything: enabled
-!McgUIFontColor: disabled
