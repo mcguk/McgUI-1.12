@@ -302,7 +302,7 @@
 			<Frame name="KLHTM_TitleFrame">
 			<Layers>
 			<Layer level="OVERLAY">
-											<Texture name="Bar" file="Interface\AddOns\KLHThreatMeter\Images\energyNoColor2" virtual="true">
+							<Texture name="Bar" file="Interface\AddOns\KLHThreatMeter\Images\energyNoColor2" virtual="true">
 							<Size>
 								<AbsDimension x="180" y="20"/>
 							</Size>
@@ -465,11 +465,6 @@
 							<OnClick> KLHTM_TitleButton_OnClick("opt"); </OnClick>
 							<OnEnter> KLHTM_TitleButton_OnEnter("opt"); </OnEnter>
 						</Scripts>
-						<Layers>
-							<Layer level="BORDER">
-								<Texture inherits="KLHTM_ButtonBackground"/>
-							</Layer>
-						</Layers>
 						<NormalTexture file="Interface\Addons\KLHThreatMeter\Images\Options">
 						</NormalTexture>
 						<PushedTexture file="Interface\Addons\KLHThreatMeter\Images\Optionsp">
@@ -601,21 +596,7 @@
 				<Layers>
 					<Layer level="BACKGROUND">
 						<!-- a dividing line between the title bar and the data -->
-						<Texture name="$parentLine" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
-							<Anchors>
-								<Anchor point="TOPLEFT">
-									<Offset>
-										<AbsDimension x="-2" y="4"/>
-									</Offset>
-								</Anchor>
-								<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT">
-									<Offset>
-										<AbsDimension x="-3" y="-3"/>
-									</Offset>
-								</Anchor>
-							</Anchors>
-							<TexCoords left="0.1" right="1.0" top="0" bottom="0.25"/>
-						</Texture>
+
 					</Layer>
 				</Layers>
 				<Frames>

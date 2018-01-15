@@ -249,8 +249,8 @@ klhtm.string.data["enUS"] =
 		["title"] = {
 			["text"] = {
 				-- the window titles
-				["long"] = "KTM %d.%d",	-- don't need to localise these
-				["short"] = "KTM",
+				["long"] = "Threat",	-- don't need to localise these
+				["short"] = "Threat",
 				
 			},
 			["buttonshort"] = {

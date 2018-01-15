@@ -53,23 +53,23 @@ KLHTM_SavedVariables = {
 			["buttonVis"] = {
 				["max"] = {
 					["targ"] = true,
-					["close"] = true,
+					["close"] = false,
 					["view"] = false,
 					["opt"] = true,
-					["pin"] = true,
-					["minmax"] = true,
+					["pin"] = false,
+					["minmax"] = false,
 					["clear"] = true,
 				},
 				["min"] = {
 					["targ"] = false,
-					["close"] = true,
+					["close"] = false,
 					["view"] = true,
 					["opt"] = true,
 					["pin"] = false,
-					["minmax"] = true,
+					["minmax"] = false,
 					["clear"] = false,
 				},
 			},
 		},
 	},
-}
+}

@@ -155,7 +155,7 @@ Y: -1586
 Frame: KLHTM_Frame
 FrameLevel: 1
 X: 1860
-Y: -1006
+Y: -1005
 Frame: MBFMiniButtonFrame
 FrameLevel: 2
 X: 1632
@@ -167,7 +167,7 @@ Y: -527
 Frame: DPSMate_DPSMate
 FrameLevel: 5
 X: 1578
-Y: -955
+Y: -954
 W: 183
 H: 102
 Frame: Tablet20DetachedFrame1
