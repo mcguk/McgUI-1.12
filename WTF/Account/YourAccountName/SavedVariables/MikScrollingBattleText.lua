@@ -116,6 +116,27 @@ MikSBT_Save = {
 					},
 					["Message"] = "Pet Dodge!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_DAMAGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "-%a (Pet)",
+				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_MISS"] = {
 					["Show"] = true,
 					["FontSettings"] = {
@@ -234,7 +255,7 @@ MikSBT_Save = {
 					},
 					["Message"] = "(%s) Immune!",
 				},
-				["MSBT_EVENTTYPE_INCOMING_HOT"] = {
+				["MSBT_EVENTTYPE_OUTGOING_SPELL_IMMUNE"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -245,10 +266,10 @@ MikSBT_Save = {
 						["Color"] = {
 							["b"] = 0,
 							["g"] = 1,
-							["r"] = 0,
+							["r"] = 1,
 						},
 					},
-					["Message"] = "(%s - %n) +%a",
+					["Message"] = "Immune! (%s)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_NPC_KILLING_BLOW"] = {
 					["IsSticky"] = true,
@@ -304,7 +325,24 @@ MikSBT_Save = {
 					},
 					["Message"] = "Block!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_ABSORB"] = {
+				["MSBT_EVENTTYPE_NOTIFICATION_CP_GAIN"] = {
+					["IsSticky"] = false,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Show"] = true,
+					["Message"] = "%a CP",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_PARRY"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -314,11 +352,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 0.502,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Message"] = "Pet Absorb!",
+					["Message"] = "Parry! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_CP_FULL"] = {
 					["IsSticky"] = false,
@@ -369,6 +407,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Pet Resist! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Immune! (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_DOT"] = {
 					["Show"] = true,
@@ -547,6 +601,48 @@ MikSBT_Save = {
 					["Show"] = true,
 					["Message"] = "-[%s]",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_HEAL"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0.4,
+							["g"] = 1,
+							["r"] = 0,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "+%a (%n) (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DAMAGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "-%a (Pet)",
+				},
 				["MSBT_EVENTTYPE_NOTIFICATION_POWER_LOSS"] = {
 					["IsSticky"] = false,
 					["FontSettings"] = {
@@ -630,6 +726,22 @@ MikSBT_Save = {
 					},
 					["Message"] = "(%s) Resist!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_MISS"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Miss! (Pet)",
+				},
 				["MSBT_EVENTTYPE_INCOMING_SPELL_DOT"] = {
 					["Show"] = true,
 					["FontSettings"] = {
@@ -678,6 +790,38 @@ MikSBT_Save = {
 					},
 					["Message"] = "Immune!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DODGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Dodge! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_SPELL_PARRY"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "(%s) Parry!",
+				},
 				["MSBT_EVENTTYPE_NOTIFICATION_BUFF"] = {
 					["IsSticky"] = false,
 					["FontSettings"] = {
@@ -694,6 +838,70 @@ MikSBT_Save = {
 					},
 					["Show"] = true,
 					["Message"] = "[%s]",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 0.502,
+						},
+					},
+					["Message"] = "Pet Immune! (%s)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_ABSORB"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 0.502,
+						},
+					},
+					["Message"] = "Pet Absorb!",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_EVADE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 22,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Pet Evade! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_HOT"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 1,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "(%s - %n) +%a",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_SKILL_GAIN"] = {
 					["IsSticky"] = false,
@@ -728,23 +936,23 @@ MikSBT_Save = {
 					},
 					["Message"] = "Evade!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_EVADE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_ABSORB"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
-							["FontSize"] = 22,
+							["FontSize"] = 0,
 							["OutlineIndex"] = 0,
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
-							["g"] = 0.502,
+							["b"] = 0,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Pet Evade! (%s)",
+					["Message"] = "Absorb! (Pet)",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_MISS"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_PARRY"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -754,11 +962,59 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Parry! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Miss!",
+					["Message"] = "(%s) Immune! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_HOT"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0.4,
+							["g"] = 1,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "+%a (%n) (Pet)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_EVADE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Pet Evade!",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_HEAL"] = {
 					["Show"] = true,
@@ -796,6 +1052,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Block! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_ABSORB"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "(%s) Absorb! (Pet)",
 				},
 				["MSBT_EVENTTYPE_INCOMING_BLOCK"] = {
 					["Show"] = true,
@@ -845,6 +1117,38 @@ MikSBT_Save = {
 					},
 					["Message"] = "Absorb!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_DODGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Dodge! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_BLOCK"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Block! (Pet)",
+				},
 				["MSBT_EVENTTYPE_INCOMING_DODGE"] = {
 					["Show"] = true,
 					["FontSettings"] = {
@@ -877,7 +1181,7 @@ MikSBT_Save = {
 					},
 					["Message"] = "(%s) Block!",
 				},
-				["MSBT_EVENTTYPE_INCOMING_SPELL_PARRY"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_RESIST"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -886,12 +1190,12 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
+							["b"] = 0.4,
 							["g"] = 0,
-							["r"] = 0,
+							["r"] = 0.5,
 						},
 					},
-					["Message"] = "(%s) Parry!",
+					["Message"] = "Resist! (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_DODGE"] = {
 					["Show"] = true,
@@ -941,7 +1245,7 @@ MikSBT_Save = {
 					},
 					["Message"] = "Pet Immune!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_IMMUNE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_MISS"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -951,11 +1255,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 0.502,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Message"] = "Pet Immune! (%s)",
+					["Message"] = "Miss! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_POWER_GAIN"] = {
 					["IsSticky"] = false,
@@ -1076,7 +1380,7 @@ MikSBT_Save = {
 					["Show"] = true,
 					["Message"] = "[%s]",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_SPELL_IMMUNE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DOT"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -1086,11 +1390,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 0,
-							["g"] = 1,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Immune! (%s)",
+					["Message"] = "-%a (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_PET_MISS"] = {
 					["Show"] = true,
@@ -1108,22 +1412,6 @@ MikSBT_Save = {
 					},
 					["Message"] = "Pet Miss!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_EVADE"] = {
-					["Show"] = true,
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["Color"] = {
-							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 1,
-						},
-					},
-					["Message"] = "Pet Evade!",
-				},
 				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_DODGE"] = {
 					["Show"] = true,
 					["FontSettings"] = {
@@ -1139,6 +1427,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Pet Dodge! (%s)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_MISS"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Miss!",
 				},
 				["MSBT_EVENTTYPE_INCOMING_SPELL_DODGE"] = {
 					["Show"] = true,
@@ -1172,8 +1476,8 @@ MikSBT_Save = {
 					},
 					["Message"] = "Immune!",
 				},
-				["MSBT_EVENTTYPE_NOTIFICATION_CP_GAIN"] = {
-					["IsSticky"] = false,
+				["MSBT_EVENTTYPE_INCOMING_PET_BLOCK"] = {
+					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
 							["FontSize"] = 0,
@@ -1181,13 +1485,12 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0,
-							["g"] = 0.502,
-							["r"] = 1,
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Show"] = true,
-					["Message"] = "%a CP",
+					["Message"] = "Block! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_COMBAT_LEAVE"] = {
 					["IsSticky"] = false,
@@ -1273,101 +1576,15 @@ MikSBT_Save = {
 					["Message"] = "Killing Blow! (%s)",
 				},
 			},
+			["LowHealthSound"] = true,
 			["ShowPartialEffects"] = true,
-			["CreationVersion"] = 3.01,
-			["MasterFontSettings"] = {
-				["Normal"] = {
-					["FontSize"] = 18,
-					["OutlineIndex"] = 3,
-					["FontIndex"] = 1,
-				},
-				["Crit"] = {
-					["FontSize"] = 26,
-					["OutlineIndex"] = 3,
-					["FontIndex"] = 1,
-				},
-			},
-			["ShowOverheals"] = true,
-			["DisplaySettings"] = {
-				["Notification"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = 100,
-						["x"] = 0,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 2,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 1,
-					["ScrollDirection"] = 1,
-					["ScrollHeight"] = 150,
-				},
-				["Incoming"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = -160,
-						["x"] = -60,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 3,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 2,
-					["ScrollDirection"] = 2,
-					["ScrollHeight"] = 260,
-				},
-				["Outgoing"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = -160,
-						["x"] = 60,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 1,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 3,
-					["ScrollDirection"] = 2,
-					["ScrollHeight"] = 260,
-				},
-			},
-			["ShowGameDamage"] = false,
-			["UseStickyCrits"] = true,
-			["AnimationStep"] = 2,
 			["Suppressions"] = {
 				["MSBT_SUPPRESSION_WISDOM_MANA_GAINS"] = {
 					["Enabled"] = true,
 					["SearchPattern"] = "+[35][039] Mana",
 				},
 			},
+			["ShowAllManaGains"] = false,
 			["Triggers"] = {
 				["MSBT_TRIGGER_RIPOSTE"] = {
 					["EventSettings"] = {
@@ -1642,7 +1859,7 @@ MikSBT_Save = {
 					["TriggerSettings"] = {
 						["TriggerType"] = 6,
 						["SearchPatterns"] = {
-							[1] = "You gain %d extra attacks through Windfury",
+							[1] = "You gain Windfury Totem.",
 						},
 						["TriggerEvents"] = {
 							[1] = "CHAT_MSG_SPELL_PERIODIC_SELF_BUFFS",
@@ -1714,6 +1931,100 @@ MikSBT_Save = {
 					},
 				},
 			},
+			["DisplaySettings"] = {
+				["Notification"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = 100,
+						["x"] = 0,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 2,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 1,
+					["ScrollDirection"] = 1,
+					["ScrollHeight"] = 150,
+				},
+				["Incoming"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = -160,
+						["x"] = -60,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 3,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 2,
+					["ScrollDirection"] = 2,
+					["ScrollHeight"] = 260,
+				},
+				["Outgoing"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = -160,
+						["x"] = 60,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 1,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 3,
+					["ScrollDirection"] = 2,
+					["ScrollHeight"] = 260,
+				},
+			},
+			["BlizzardFontSettings"] = {
+				["Normal"] = {
+					["FontIndex"] = 6,
+				},
+			},
+			["MasterFontSettings"] = {
+				["Normal"] = {
+					["FontSize"] = 18,
+					["OutlineIndex"] = 3,
+					["FontIndex"] = 1,
+				},
+				["Crit"] = {
+					["FontSize"] = 26,
+					["OutlineIndex"] = 3,
+					["FontIndex"] = 1,
+				},
+			},
+			["LowManaSound"] = true,
+			["CreationVersion"] = 4.4,
+			["UseStickyCrits"] = true,
+			["AnimationStep"] = 2,
+			["ShowOverheals"] = true,
+			["ShowGameDamage"] = false,
 		},
 		["Default"] = {
 			["EventSettings"] = {
@@ -1827,6 +2138,27 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Pet Dodge!",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_DAMAGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "-%a (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_MISS"] = {
 					["Show"] = true,
@@ -1946,8 +2278,8 @@ MikSBT_Save = {
 					},
 					["Message"] = "(%s) Immune!",
 				},
-				["MSBT_EVENTTYPE_INCOMING_HOT"] = {
-					["Show"] = false,
+				["MSBT_EVENTTYPE_OUTGOING_SPELL_IMMUNE"] = {
+					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
 							["FontSize"] = 0,
@@ -1957,10 +2289,10 @@ MikSBT_Save = {
 						["Color"] = {
 							["b"] = 0,
 							["g"] = 1,
-							["r"] = 0,
+							["r"] = 1,
 						},
 					},
-					["Message"] = "(%s - %n) +%a",
+					["Message"] = "Immune! (%s)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_NPC_KILLING_BLOW"] = {
 					["IsSticky"] = true,
@@ -2009,14 +2341,31 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
-							["g"] = 1,
-							["r"] = 1,
+							["b"] = 0.3333333333333333,
+							["g"] = 0.5450980392156862,
+							["r"] = 0.2078431372549019,
 						},
 					},
 					["Message"] = "Block!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_ABSORB"] = {
+				["MSBT_EVENTTYPE_NOTIFICATION_CP_GAIN"] = {
+					["IsSticky"] = false,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Show"] = true,
+					["Message"] = "%a CP",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_PARRY"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -2026,11 +2375,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 0.502,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Message"] = "Pet Absorb!",
+					["Message"] = "Parry! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_CP_FULL"] = {
 					["IsSticky"] = false,
@@ -2081,6 +2430,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Pet Resist! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Immune! (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_DOT"] = {
 					["Show"] = true,
@@ -2161,9 +2526,9 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0,
-							["g"] = 0,
-							["r"] = 1,
+							["b"] = 0.1490196078431373,
+							["g"] = 0.1490196078431373,
+							["r"] = 0.6980392156862745,
 						},
 						["Crit"] = {
 							["FontSize"] = 0,
@@ -2251,13 +2616,55 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0,
-							["g"] = 0.698,
-							["r"] = 0.698,
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 					},
 					["Show"] = true,
 					["Message"] = "-[%s]",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_HEAL"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0.4,
+							["g"] = 1,
+							["r"] = 0,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "+%a (%n) (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DAMAGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["Message"] = "-%a (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_POWER_LOSS"] = {
 					["IsSticky"] = false,
@@ -2285,9 +2692,9 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
-							["g"] = 1,
-							["r"] = 1,
+							["b"] = 0.3333333333333333,
+							["g"] = 0.5450980392156862,
+							["r"] = 0.2078431372549019,
 						},
 					},
 					["Message"] = "Parry!",
@@ -2318,9 +2725,9 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0.698,
-							["g"] = 0.698,
-							["r"] = 0.698,
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 					},
 					["Show"] = true,
@@ -2341,6 +2748,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "(%s) Resist!",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_MISS"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Miss! (Pet)",
 				},
 				["MSBT_EVENTTYPE_INCOMING_SPELL_DOT"] = {
 					["Show"] = true,
@@ -2390,6 +2813,38 @@ MikSBT_Save = {
 					},
 					["Message"] = "Immune!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DODGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Dodge! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_SPELL_PARRY"] = {
+					["Show"] = false,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "(%s) Parry!",
+				},
 				["MSBT_EVENTTYPE_NOTIFICATION_BUFF"] = {
 					["IsSticky"] = false,
 					["FontSettings"] = {
@@ -2399,13 +2854,77 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0,
-							["g"] = 0.698,
-							["r"] = 0.698,
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
 						},
 					},
 					["Show"] = true,
 					["Message"] = "[%s]",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 0.502,
+						},
+					},
+					["Message"] = "Pet Immune! (%s)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_ABSORB"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 0.502,
+						},
+					},
+					["Message"] = "Pet Absorb!",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_EVADE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 22,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Pet Evade! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_HOT"] = {
+					["Show"] = false,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 1,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "(%s - %n) +%a",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_SKILL_GAIN"] = {
 					["IsSticky"] = false,
@@ -2440,23 +2959,23 @@ MikSBT_Save = {
 					},
 					["Message"] = "Evade!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_EVADE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_ABSORB"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
-							["FontSize"] = 22,
+							["FontSize"] = 0,
 							["OutlineIndex"] = 0,
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
-							["g"] = 0.502,
+							["b"] = 0,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Pet Evade! (%s)",
+					["Message"] = "Absorb! (Pet)",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_MISS"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_PARRY"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -2466,11 +2985,59 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Parry! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_IMMUNE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Miss!",
+					["Message"] = "(%s) Immune! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_HOT"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0.4,
+							["g"] = 1,
+							["r"] = 0,
+						},
+					},
+					["Message"] = "+%a (%n) (Pet)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_PET_EVADE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.502,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "Pet Evade!",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_HEAL"] = {
 					["Show"] = true,
@@ -2508,6 +3075,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Block! (%s)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_ABSORB"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0,
+							["g"] = 0.7,
+							["r"] = 1,
+						},
+					},
+					["Message"] = "(%s) Absorb! (Pet)",
 				},
 				["MSBT_EVENTTYPE_INCOMING_BLOCK"] = {
 					["Show"] = false,
@@ -2557,6 +3140,38 @@ MikSBT_Save = {
 					},
 					["Message"] = "Absorb!",
 				},
+				["MSBT_EVENTTYPE_INCOMING_PET_DODGE"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Dodge! (Pet)",
+				},
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_BLOCK"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
+						},
+					},
+					["Message"] = "Block! (Pet)",
+				},
 				["MSBT_EVENTTYPE_INCOMING_DODGE"] = {
 					["Show"] = false,
 					["FontSettings"] = {
@@ -2589,8 +3204,8 @@ MikSBT_Save = {
 					},
 					["Message"] = "(%s) Block!",
 				},
-				["MSBT_EVENTTYPE_INCOMING_SPELL_PARRY"] = {
-					["Show"] = false,
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_RESIST"] = {
+					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
 							["FontSize"] = 0,
@@ -2598,12 +3213,12 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
+							["b"] = 0.4,
 							["g"] = 0,
-							["r"] = 0,
+							["r"] = 0.5,
 						},
 					},
-					["Message"] = "(%s) Parry!",
+					["Message"] = "Resist! (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_SPELL_DODGE"] = {
 					["Show"] = true,
@@ -2653,7 +3268,7 @@ MikSBT_Save = {
 					},
 					["Message"] = "Pet Immune!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_IMMUNE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_MISS"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -2663,11 +3278,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 0.502,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Message"] = "Pet Immune! (%s)",
+					["Message"] = "Miss! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_POWER_GAIN"] = {
 					["IsSticky"] = false,
@@ -2788,7 +3403,7 @@ MikSBT_Save = {
 					["Show"] = true,
 					["Message"] = "[%s]",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_SPELL_IMMUNE"] = {
+				["MSBT_EVENTTYPE_INCOMING_PET_SPELL_DOT"] = {
 					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
@@ -2798,11 +3413,11 @@ MikSBT_Save = {
 						},
 						["Color"] = {
 							["b"] = 0,
-							["g"] = 1,
+							["g"] = 0.7,
 							["r"] = 1,
 						},
 					},
-					["Message"] = "Immune! (%s)",
+					["Message"] = "-%a (Pet)",
 				},
 				["MSBT_EVENTTYPE_OUTGOING_PET_MISS"] = {
 					["Show"] = true,
@@ -2820,22 +3435,6 @@ MikSBT_Save = {
 					},
 					["Message"] = "Pet Miss!",
 				},
-				["MSBT_EVENTTYPE_OUTGOING_PET_EVADE"] = {
-					["Show"] = true,
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["Color"] = {
-							["b"] = 1,
-							["g"] = 0.502,
-							["r"] = 1,
-						},
-					},
-					["Message"] = "Pet Evade!",
-				},
 				["MSBT_EVENTTYPE_OUTGOING_PET_SPELL_DODGE"] = {
 					["Show"] = true,
 					["FontSettings"] = {
@@ -2851,6 +3450,22 @@ MikSBT_Save = {
 						},
 					},
 					["Message"] = "Pet Dodge! (%s)",
+				},
+				["MSBT_EVENTTYPE_OUTGOING_MISS"] = {
+					["Show"] = true,
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["Color"] = {
+							["b"] = 0.3333333333333333,
+							["g"] = 0.5450980392156862,
+							["r"] = 0.2078431372549019,
+						},
+					},
+					["Message"] = "Miss!",
 				},
 				["MSBT_EVENTTYPE_INCOMING_SPELL_DODGE"] = {
 					["Show"] = false,
@@ -2884,8 +3499,8 @@ MikSBT_Save = {
 					},
 					["Message"] = "Immune!",
 				},
-				["MSBT_EVENTTYPE_NOTIFICATION_CP_GAIN"] = {
-					["IsSticky"] = false,
+				["MSBT_EVENTTYPE_INCOMING_PET_BLOCK"] = {
+					["Show"] = true,
 					["FontSettings"] = {
 						["Normal"] = {
 							["FontSize"] = 0,
@@ -2893,13 +3508,12 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 0,
-							["g"] = 0.502,
-							["r"] = 1,
+							["b"] = 1,
+							["g"] = 0.4,
+							["r"] = 0.2,
 						},
 					},
-					["Show"] = true,
-					["Message"] = "%a CP",
+					["Message"] = "Block! (Pet)",
 				},
 				["MSBT_EVENTTYPE_NOTIFICATION_COMBAT_LEAVE"] = {
 					["IsSticky"] = false,
@@ -2943,9 +3557,9 @@ MikSBT_Save = {
 							["FontIndex"] = 0,
 						},
 						["Color"] = {
-							["b"] = 1,
-							["g"] = 1,
-							["r"] = 1,
+							["b"] = 0.3333333333333333,
+							["g"] = 0.5450980392156862,
+							["r"] = 0.2078431372549019,
 						},
 					},
 					["Message"] = "Dodge!",
@@ -2985,101 +3599,15 @@ MikSBT_Save = {
 					["Message"] = "Killing Blow! (%s)",
 				},
 			},
+			["LowHealthSound"] = true,
 			["ShowPartialEffects"] = true,
-			["CreationVersion"] = 3.01,
-			["MasterFontSettings"] = {
-				["Normal"] = {
-					["FontSize"] = 12,
-					["OutlineIndex"] = 1,
-					["FontIndex"] = 4,
-				},
-				["Crit"] = {
-					["FontSize"] = 20,
-					["OutlineIndex"] = 2,
-					["FontIndex"] = 4,
-				},
-			},
-			["ShowOverheals"] = true,
-			["DisplaySettings"] = {
-				["Notification"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = -300,
-						["x"] = 0,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 2,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 1,
-					["ScrollDirection"] = 1,
-					["ScrollHeight"] = 150,
-				},
-				["Incoming"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = -300,
-						["x"] = -300,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 3,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 1,
-					["ScrollDirection"] = 2,
-					["ScrollHeight"] = 100,
-				},
-				["Outgoing"] = {
-					["Show"] = true,
-					["FrameOffsets"] = {
-						["y"] = -299,
-						["x"] = 300,
-					},
-					["FontSettings"] = {
-						["Normal"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-						["TextAlignIndex"] = 1,
-						["Crit"] = {
-							["FontSize"] = 0,
-							["OutlineIndex"] = 0,
-							["FontIndex"] = 0,
-						},
-					},
-					["AnimationStyle"] = 1,
-					["ScrollDirection"] = 2,
-					["ScrollHeight"] = 260,
-				},
-			},
-			["ShowGameDamage"] = true,
-			["UseStickyCrits"] = true,
-			["AnimationStep"] = 2,
 			["Suppressions"] = {
 				["MSBT_SUPPRESSION_WISDOM_MANA_GAINS"] = {
 					["Enabled"] = true,
 					["SearchPattern"] = "+[35][039] Mana",
 				},
 			},
+			["ShowAllManaGains"] = false,
 			["Triggers"] = {
 				["MSBT_TRIGGER_RIPOSTE"] = {
 					["EventSettings"] = {
@@ -3147,7 +3675,7 @@ MikSBT_Save = {
 				},
 				["MSBT_TRIGGER_LOW_HEALTH"] = {
 					["EventSettings"] = {
-						["IsSticky"] = false,
+						["IsSticky"] = true,
 						["FontSettings"] = {
 							["Normal"] = {
 								["FontSize"] = 26,
@@ -3155,9 +3683,9 @@ MikSBT_Save = {
 								["FontIndex"] = 0,
 							},
 							["Color"] = {
-								["b"] = 0.502,
-								["g"] = 0.502,
-								["r"] = 1,
+								["b"] = 0.1490196078431373,
+								["g"] = 0.1490196078431373,
+								["r"] = 0.6980392156862745,
 							},
 						},
 						["Show"] = true,
@@ -3337,7 +3865,7 @@ MikSBT_Save = {
 							["Color"] = {
 								["r"] = 1,
 								["g"] = 1,
-								["b"] = 0.996078431372549,
+								["b"] = 1,
 							},
 							["Normal"] = {
 								["FontSize"] = 32,
@@ -3412,7 +3940,7 @@ MikSBT_Save = {
 					["TriggerSettings"] = {
 						["TriggerType"] = 6,
 						["SearchPatterns"] = {
-							[1] = "You gain %d extra attacks through Windfury",
+							[1] = "You gain Windfury Totem.",
 						},
 						["TriggerEvents"] = {
 							[1] = "CHAT_MSG_SPELL_PERIODIC_SELF_BUFFS",
@@ -3484,6 +4012,100 @@ MikSBT_Save = {
 					},
 				},
 			},
+			["DisplaySettings"] = {
+				["Notification"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = -300,
+						["x"] = 0,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 2,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 1,
+					["ScrollDirection"] = 1,
+					["ScrollHeight"] = 150,
+				},
+				["Incoming"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = -300,
+						["x"] = -300,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 3,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 1,
+					["ScrollDirection"] = 2,
+					["ScrollHeight"] = 100,
+				},
+				["Outgoing"] = {
+					["Show"] = true,
+					["FrameOffsets"] = {
+						["y"] = -299,
+						["x"] = 300,
+					},
+					["FontSettings"] = {
+						["Normal"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+						["TextAlignIndex"] = 1,
+						["Crit"] = {
+							["FontSize"] = 0,
+							["OutlineIndex"] = 0,
+							["FontIndex"] = 0,
+						},
+					},
+					["AnimationStyle"] = 1,
+					["ScrollDirection"] = 2,
+					["ScrollHeight"] = 260,
+				},
+			},
+			["BlizzardFontSettings"] = {
+				["Normal"] = {
+					["FontIndex"] = 6,
+				},
+			},
+			["MasterFontSettings"] = {
+				["Normal"] = {
+					["FontSize"] = 14,
+					["OutlineIndex"] = 2,
+					["FontIndex"] = 4,
+				},
+				["Crit"] = {
+					["FontSize"] = 22,
+					["OutlineIndex"] = 2,
+					["FontIndex"] = 4,
+				},
+			},
+			["LowManaSound"] = true,
+			["CreationVersion"] = 4.4,
+			["UseStickyCrits"] = true,
+			["AnimationStep"] = 2,
+			["ShowOverheals"] = true,
+			["ShowGameDamage"] = true,
 		},
 	},
 }

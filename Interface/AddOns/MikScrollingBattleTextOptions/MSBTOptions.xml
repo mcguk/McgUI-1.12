@@ -2013,6 +2013,20 @@
      </Anchor>
     </Anchors>
    </Frame>
+   
+   <!-- Icon Name Editbox -->
+   <EditBox name="$parentIconNameEditbox" inherits="MSBTEditboxTemplate">
+    <Size>
+     <AbsDimension x="180" y="22" />
+    </Size>
+    <Anchors>
+     <Anchor point="TOPLEFT" relativeTo="$parentPriestCheckbox" relativePoint="BOTTOMLEFT">
+      <Offset>
+       <AbsDimension x="190" y="-30" />
+      </Offset>
+     </Anchor>
+    </Anchors>
+   </EditBox>
 
    <!-- Threshold Slider -->
    <Slider name="$parentThresholdSlider" inherits="MSBTSliderTemplate">
@@ -2226,7 +2240,7 @@
      <Anchors>
       <Anchor point="TOPLEFT">
        <Offset>
-        <AbsDimension x="8" y="1" />
+        <AbsDimension x="8" y="-3" />
        </Offset>
       </Anchor>
      </Anchors>
@@ -2548,6 +2562,20 @@
        </Anchor>
       </Anchors>
      </Button>
+	 
+	 <!-- Edit Blizzard Font Settings Button -->
+     <Button name="$parentEditBlizzardFontSettingsButton" inherits="MSBTButtonTemplate">
+      <Size>
+       <AbsDimension x="200" y="20" />
+      </Size>
+      <Anchors>
+       <Anchor point="BOTTOMLEFT">
+        <Offset>
+         <AbsDimension x="365" y="15" />
+        </Offset>
+       </Anchor>
+      </Anchors>
+     </Button>
 
 
      <!-- Show Partial Effects Checkbox -->
@@ -2593,7 +2621,39 @@
        </Anchor>
       </Anchors>
      </CheckButton>
-
+	 
+	 <!-- All Mana Gains Checkbox -->
+     <CheckButton name="$parentShowAllManaGainsCheckbox" inherits="MSBTCheckTemplate">
+      <Anchors>
+       <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeTo="$parentShowPartialEffectsCheckbox">
+        <Offset>
+         <AbsDimension x="0" y="10" />
+        </Offset>
+       </Anchor>
+      </Anchors>
+     </CheckButton>
+	 
+	  <!-- Low Health Sound Checkbox -->
+     <CheckButton name="$parentLowHealthSoundCheckbox" inherits="MSBTCheckTemplate">
+      <Anchors>
+       <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentShowAllManaGainsCheckboxText">
+        <Offset>
+         <AbsDimension x="10" y="0" />
+        </Offset>
+       </Anchor>
+      </Anchors>
+     </CheckButton>
+	 
+	  <!-- Low Mana Sound Checkbox -->
+     <CheckButton name="$parentLowManaSoundCheckbox" inherits="MSBTCheckTemplate">
+      <Anchors>
+       <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentLowHealthSoundCheckboxText">
+        <Offset>
+         <AbsDimension x="10" y="0" />
+        </Offset>
+       </Anchor>
+      </Anchors>
+     </CheckButton>
 
      <!-- Animation Step Slider -->
      <Slider name="$parentAnimationStepSlider" inherits="MSBTSliderTemplate">
