@@ -1,6 +1,8 @@
 # McgUI
 Melee user interface (1920x1080)
 
+![alt text](https://i.imgur.com/9NLcDk7.jpg)
+
 # Installation
 1. Backup your current Interface & WTF folders or make a new client (Recommended)
 2. Delete current Interface/WTF & unpack the ZIP. Place the provided Interface/WTF folders in the WoW directory.
