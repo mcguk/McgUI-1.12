@@ -1,7 +1,7 @@
 # McgUI
 Melee user interface (1920x1080)
 
-![alt text](https://i.imgur.com/9NLcDk7.jpg)
+![alt text](https://i.imgur.com/lOo3BM2.jpg)
 
 # Installation
 1. Backup your current Interface & WTF folders or make a new client (Recommended)
