@@ -12,4 +12,4 @@ Melee user interface (1920x1080)
 6. On first use in game enter /energywatch on and /energywatch show combat
 
 # More info
-Chat and KTM&DPS meter background panels will show when grouped or in raid 
+Chat and KTM&DPS meter background panels will show when grouped or in raid , minimap button holder will take a few seconds to finish loading at login
