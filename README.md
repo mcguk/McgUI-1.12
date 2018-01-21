@@ -1,5 +1,7 @@
-# McgUI
-Melee user interface (1920x1080)
+![MCGUI](https://i.imgur.com/dwAAHbA.png?style=centerme)
+
+Melee user interface for World of Warcraft 1.12 (1920x1080)
+![alt text](https://i.imgur.com/Nyt2McN.jpg)
 
 # Installation
 1. Backup your current Interface & WTF folders or make a new client (Recommended)
@@ -8,3 +10,6 @@ Melee user interface (1920x1080)
 4. Rename the "Kronos" folder to the realm your currently playing on.
 5. Rename the "Rogue" or "Warrior" folder to your characters name relating to either class.
 6. On first use in game enter /energywatch on and /energywatch show combat
+
+# More info
+Chat and KTM&DPS meter background panels will show when grouped or in raid , minimap button holder will take a few seconds to finish loading at login
