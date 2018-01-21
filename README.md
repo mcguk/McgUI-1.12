@@ -1,6 +1,6 @@
-![MCGUI](https://i.imgur.com/dwAAHbA.png)
-Melee user interface for World of Warcraft 1.12 (1920x1080)
+![MCGUI](https://i.imgur.com/dwAAHbA.png?style=centerme)
 
+Melee user interface for World of Warcraft 1.12 (1920x1080)
 ![alt text](https://i.imgur.com/Nyt2McN.jpg)
 
 # Installation
