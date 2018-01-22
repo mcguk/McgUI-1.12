@@ -1,7 +1,7 @@
 ![MCGUI](https://i.imgur.com/dwAAHbA.png?style=centerme)
 
 Melee user interface for World of Warcraft 1.12 (1920x1080)
-![alt text](https://i.imgur.com/Nyt2McN.jpg)
+![alt text](https://i.imgur.com/UPNwEmv.jpg)
 
 # Installation
 1. Backup your current Interface & WTF folders or make a new client (Recommended)
